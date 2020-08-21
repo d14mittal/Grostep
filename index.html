@@ -50,7 +50,7 @@
 	</nav>
 	
 	
-	<div id="slides" class="carousel slide" data-ride="carousel">
+	<!-- {% comment %} <div id="slides" class="carousel slide" data-ride="carousel">
 
 	
 		<ul class="carousel-indicators">
@@ -83,11 +83,73 @@
 			<span class="sr-only">Next</span>
 		  </a> 
 		  
+	</div> {% endcomment %} -->
+
+	<!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+	<!--Indicators-->
+	<ol class="carousel-indicators">
+	  <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+	  <li data-target="#carousel-example-2" data-slide-to="1"></li>
+	  <li data-target="#carousel-example-2" data-slide-to="2"></li>
+	</ol>
+	<!--/.Indicators-->
+	<!--Slides-->
+	<div class="carousel-inner" role="listbox">
+	  <div class="carousel-item active">
+		<div class="view">
+		  <img class="d-block w-100" src="carousel12.jpg"
+			alt="First slide">
+		  <div class="mask rgba-black-light"></div>
+		</div>
+		<div class="carousel-caption">
+		  <h3 class="h3-responsive">Light mask</h3>
+		  <p>First text</p>
+		</div>
+	  </div>
+	  <div class="carousel-item">
+		<!--Mask color-->
+		<div class="view">
+		  <img class="d-block w-100" src="image3.jpg"
+			alt="Second slide">
+		  <div class="mask rgba-black-strong"></div>
+		</div>
+		<div class="carousel-caption">
+		  <h3 class="h3-responsive">Strong mask</h3>
+		  <p>Secondary text</p>
+		</div>
+	  </div>
+	  <div class="carousel-item">
+		<!--Mask color-->
+		<div class="view">
+		  <img class="d-block w-100" src="image2.jpg"
+			alt="Third slide">
+		  <div class="mask rgba-black-slight"></div>
+		</div>
+		<div class="carousel-caption">
+		  <h3 class="h3-responsive">Slight mask</h3>
+		  <p>Third text</p>
+		</div>
+	  </div>
 	</div>
+	<!--/.Slides-->
+	<!--Controls-->
+	<a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	  <span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	  <span class="sr-only">Next</span>
+	</a>
+	<!--/.Controls-->
+  </div>
+  <!--/.Carousel Wrapper-->
+
 		<div class="container-fluid">
 			<div class="row jumbotron">
 				<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-				<p class="lead">We provide our customer with the best service from nearby store in least possible time</p>
+				<p class="lead">.</p>
 				</div> 
 			</div>
 
@@ -138,28 +200,22 @@
 			  <div class="row padding">
 				  <div class="col-md-12 col-lg-6">
 					  <h1>About us</h1>
-					  <p>We guarantee our COVID-19 protection services at minimum prices. We wish for your
-						safety in this COVID-19 pandemic crisis. Make your order through our app and our
-						delivery boy will deliver it at your doorstep on the specified date & time.
+					  <p>We guarantee our COVID-19 protection services at minimum prices.
+					  <br>	We wish for your safety in this COVID-19 pandemic crisis. Make your order through <br>
+						our app and our	delivery boy will deliver it at your doorstep on the specified date & time.
 					  </p>
 					  <p>
 						100% Contactless delivery Guarantee.
 					  </p>
 				  </div>
 				  <div class="col-lg-6">
-					  <img src="contactless-delivery-1.png" alt="" height="300px" width="500px" class="img-fluid">
+					  <img src="contactless-delivery-1.png" alt="" class="img-fluid">
 				  </div>
 			  </div>
 		  </div>
 
 		  <hr class="my-4">
-		  <figure>
-			  <div class="fixed-wrap">
-				  <div class="fixed">
-					
-				  </div>
-			  </div> 
-		  </figure>
+		 
 
 		  <div class="container-fluid padding">
 			  <div class="row text-center padding">
@@ -167,7 +223,7 @@
 					  <h2>Connect</h2>
 				  </div>
 				  <div class="col-12 social padding">
-					<a href=""><i class="fab fa-facebook"></i></a>
+					<a href=""><i class="fab fa-youtube"></i></a>
 					<a href=""><i class="fab fa-twitter"></i></a>
 					<a href=""><i class="fab fa-instagram"></i></a>
 					<a href=""><i class="fab fa-facebook"></i></a>
@@ -187,7 +243,7 @@
 						<p>Firozabad</p>
 						<span><i class="fas fa-phone"></i>  &nbsp; 123-45-789</span><br>
                 		<span><i class="fas fa-envelope"></i>  &nbsp; support.grostep@gmail.com</span><br>
-						<a href="https://play.google.com/store/apps/details?id=com.grostep.customersapp&showAllReviews=true"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="" style="width: 200px;"></a>
+						<a href="https://play.google.com/store/apps/details?id=com.grostep.customersapp&showAllReviews=true" target="_blank"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="" style="width: 200px;"></a>
 					</div>
 
 					<div class="col-md-4">
@@ -201,17 +257,18 @@
 					<div class="col-md-4">
 						<hr class="light">
 						<h5>We deliver here</h5>
+						<hr class="light">
 						<p>Noida</p>
 						<p>Indirapuram</p>
 						<p>Agra</p>
 					</div>
-					<div class=" col-12">
+					<!-- <div class=" col-12">
 						<hr class="light-100">
 						Copyright &copy; grostep.com | All rights reserved.
-					</div>
-					<!-- <div class="footer-bottom">
-						Copyright &copy; grostep.com | All rights reserved.
 					</div> -->
+					<div class="footer-bottom">
+						Copyright &copy; grostep.com | All rights reserved.
+					</div>
 
 
 				</div>

@@ -38,7 +38,15 @@ html, body{
 .jumbotron{
   padding: 1rem;
   border-radius: 0;
+  text-align: center;
 }
+/* .jumbotron lead{
+  text-align: center;
+} */
+.container-fluid .jumbotron .lead{
+  text-align: center;
+}
+
 .padding{
   padding-bottom: 2rem;
 }
@@ -84,8 +92,11 @@ html, body{
 footer{
   background-color: #3f3f3f;
   color: #d5d5d5;
-  padding-top: 2rem;
+  padding-top: 1rem;
   bottom: 0px;
+}
+footer a{
+  color: #d5d5d5;
 }
 hr.light{
   border-top: 1px solid #d5d5d5;
@@ -93,9 +104,17 @@ hr.light{
   margin-top: .8rem;
   margin-bottom: 1rem; 
 } 
-footer a{
-  color: #d5d5d5;
-}
+/* .footer-bottom{
+  background: #343a40;
+  color: #686868;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+} */
 hr.light-100{
   border-top: 1px solid #d5d5d5;
   width: 100%;
@@ -103,12 +122,28 @@ hr.light-100{
   margin-bottom: 1rem;
 
 }
-
-
-
-
-
-
+.lead{
+  text-align: center;
+}
+p{
+  text-align: center;
+}
+h1{
+  text-align: center;
+}
+/* img{
+  text-align: center;
+} */
+.footer-bottom{
+  text-align: center;
+}
+.img-fluid{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+}
 
 
 
