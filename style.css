@@ -11,7 +11,7 @@ html, body{
   padding: .8rem;
 }
 .navbar-nav li{
-  paading-right: 20px;
+  padding-right : 30px;
 }
 .nav-link{
   font-size: 1.1em !important;
@@ -40,12 +40,15 @@ html, body{
   border-radius: 0;
   text-align: center;
 }
+.container .jumbotron{
+  width: 100%;
+}
 /* .jumbotron lead{
   text-align: center;
 } */
-.container-fluid .jumbotron .lead{
+/* .container-fluid .row .lead{
   text-align: center;
-}
+} */
 
 .padding{
   padding-bottom: 2rem;
@@ -122,9 +125,7 @@ hr.light-100{
   margin-bottom: 1rem;
 
 }
-.lead{
-  text-align: center;
-}
+
 p{
   text-align: center;
 }
@@ -134,18 +135,18 @@ h1{
 /* img{
   text-align: center;
 } */
-.footer-bottom{
+/* .footer-bottom{
   text-align: center;
-}
+  margin-left: 40%;
+
+} */
 .img-fluid{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  
+
 }
-
-
 
 
 /*---Media Queries --*/
